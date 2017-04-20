@@ -28,7 +28,7 @@ class NusuafSpider(CrawlSpider):
         item = NwsuafItem()
         item['url'] = response.url
         item['title'] = nafu.xpath('/html/head/title/text()').extract()[0]
-        soup = BeautifulSoup(response.body)
+        soup = BeautifulSoup(response.body, 'lxml')
         item['content'] = soup.get_text(strip=True)
-        print(item['item'])
+        print(item['title'])
         yield item
