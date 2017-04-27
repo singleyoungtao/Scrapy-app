@@ -98,7 +98,7 @@ PROXIES = [
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'nwsuaf.pipelines.NwsuafPipeline': 300,
+   'nwsuaf.pipelines.MongoPipeline': 300,
 }
 
 MONGO_HOST = '127.0.0.1'
