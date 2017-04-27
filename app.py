@@ -1,7 +1,7 @@
 #!/bin/python3
 #-*-coding:utf-8-*-
 
-import os, json, re
+import os, json, re, scrapy
 from flask import Flask, render_template, request, jsonify, abort
 from flask_cors import CORS, cross_origin
 from pymongo import MongoClient
@@ -10,10 +10,18 @@ from whoosh.index import create_in, open_dir
 from whoosh.qparser import MultifieldParser
 from whoosh.highlight import highlight, ContextFragmenter, Highlighter
 from whoosh.searching import Hit
-from jieba.analyse import ChineseAnalyzer
-import scrapy
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
+from scrapy.crawler import Crawler, CrawlerRunner
+from scrapy import log, signals
+from scrapy.spiders import CrawlSpider
+from scrapy.utils.log import configure_logging
+from twisted.internet import reactor
+from jieba.analyse import ChineseAnalyzer
+from nwsuaf.spiders.nwsuaf import NwsuafSpider
+
+
+
 
 
 app = Flask(__name__)
@@ -131,50 +139,23 @@ url_co.insert({"url": "www.nwsuaf.edu.cn"})
 # TODO 执行上面的语句时要先清空数据库
 # crawl_finished = False
 
-# def auto_crawl():
-#     nwsuaf = WhooshSarch(co)
-#     nwsuaf.rebuild_index()
-#     return nwsuaf
 # query_one = "关于举办新西兰林肯大学土壤学专家系列学术报告的通知"
 # pageshow = nwsuaf.search(query_one)
 # print(pageshow)
 # nwsuaf.close()
 
-# def auto_crawl():
-#     process = CrawlerProcess(get_project_settings())
-#     process.crawl('nwsuaf')
-#     process.start()
-#     return True
-from nwsuaf.spiders.nwsuaf import NwsuafSpider
-from scrapy.crawler import Crawler, CrawlerRunner
-from twisted.internet import reactor
-from scrapy import log, signals
-from scrapy.spiders import CrawlSpider
-from scrapy.utils.log import configure_logging
-
-configure_logging({'LOG_FORMAT': '%(levelname)s: %(message)s'})
-runner = CrawlerRunner(get_project_settings())
-
-d = runner.crawl(NwsuafSpider)
-d.addBoth(lambda _: reactor.stop())
-reactor.run() # the script will block here until the crawling is finished
-
-
+def auto_crawl():
+    # TODO运行爬虫前需要将数据库中的search集合清空，url集合不可以清空
+    configure_logging({'LOG_FORMAT': '%(levelname)s: %(message)s'})
+    runner = CrawlerRunner(get_project_settings())
+    d = runner.crawl(NwsuafSpider)
+    # reactor如果在此处stop后，后面的爬虫将不能运行
+    # d.addBoth(lambda _: reactor.stop())
+    reactor.run() # the script will block here until the crawling is finished
+    nwsuaf.rebuild_index()
 
 nwsuaf = WhooshSarch(co)
-nwsuaf.rebuild_index()
-# spider = NwsuafSpider(CrawlSpider)
-# settings = get_project_settings()
-# crawler = Crawler(settings)
-# crawler.signals.connect(reactor.stop, signal=signals.spider_closed)
-
-# crawler.configure()
-# crawler.crawl(spider)
-# crawler.start()
-# log.start()
-# reactor.run()
-# nwsuaffirst = nwsuaf.auto_crawl()
-
+auto_crawl()
 
 
 @app.route('/')
@@ -196,6 +177,7 @@ def url_post():
     # url_co.find_one_and_update({},{'posturl': request.json['posturl']})
     url_co.find_one_and_update({},{'$set': {'url': request.json['posturl']}}, upsert=False)
     urlstr = url_co.find_one()
+    auto_crawl()
     return urlstr['url']
     
 # @app.route('/messages', methods=['POST'])
@@ -215,6 +197,7 @@ def get_results():
         abort(400)
     query_keywords = request.json['keywords']
     pageshow = nwsuaf.search(query_keywords)
+    # 此处猜想，search的应该是已经建立好的index而非数据库
     print(query_keywords)
     print(pageshow)
     # TODO 此处添加完成搜索后的返回消息

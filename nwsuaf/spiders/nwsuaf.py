@@ -57,9 +57,3 @@ class NwsuafSpider(CrawlSpider):
         print(item['title'])
         yield item
 
-
-# def auto_crawl():
-#     process = CrawlerProcess(get_project_settings())
-#     process.crawl('nwsuaf')
-#     process.start()
-#     return True
