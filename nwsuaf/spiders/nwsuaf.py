@@ -6,15 +6,16 @@ import os
 from pymongo import MongoClient
 # os.environ.setdefault('SCRAPY_SETTINGS_MODULE', 'NWSUAF.settings')
 from scrapy import crawler
-from scrapy.crawler import Crawler
+from scrapy.crawler import Crawler, CrawlerProcess
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import Selector
 from scrapy.http import HtmlResponse
+from scrapy.utils.project import get_project_settings
 from bs4 import BeautifulSoup
 from nwsuaf.items import NwsuafItem
 
-class NusuafSpider(CrawlSpider):
+class NwsuafSpider(CrawlSpider):
     """ This is spider """
     name = 'nwsuaf'
     
@@ -55,3 +56,10 @@ class NusuafSpider(CrawlSpider):
         item['content'] = soup.get_text(strip=True)
         print(item['title'])
         yield item
+
+
+# def auto_crawl():
+#     process = CrawlerProcess(get_project_settings())
+#     process.crawl('nwsuaf')
+#     process.start()
+#     return True
