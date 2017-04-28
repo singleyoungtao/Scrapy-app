@@ -1,0 +1,1233 @@
+2017-04-28 18:41:02 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: nwsuaf)
+2017-04-28 18:41:02 [scrapy.utils.log] INFO: Overridden settings: {'COOKIES_ENABLED': False, 'LOG_FILE': 'logs/nwsuaf/nwsuaf/2ae8d5a82bff11e7b33d6c71d92d60f0.log', 'BOT_NAME': 'nwsuaf', 'NEWSPIDER_MODULE': 'nwsuaf.spiders', 'DOWNLOAD_DELAY': 3, 'SPIDER_MODULES': ['nwsuaf.spiders']}
+2017-04-28 18:41:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2017-04-28 18:41:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-04-28 18:41:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-04-28 18:41:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['nwsuaf.pipelines.MongoPipeline']
+2017-04-28 18:41:02 [scrapy.core.engine] INFO: Spider opened
+2017-04-28 18:41:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-04-28 18:41:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-04-28 18:41:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://tao-blog.herokuapp.com/> from <GET http://tao-blog.herokuapp.com>
+2017-04-28 18:41:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/> (referer: None)
+2017-04-28 18:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:16 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/>
+{'content': "Tao's blog切换导航Tao’s blog主页登录你好, "
+            '朋友!全部2016-09-12T14:32:13Zmint加油呀~链接0 '
+            '条评论2016-09-02T01:55:21Ztaoiefjie链接0 '
+            '条评论2016-08-22T11:19:09Zmint隐约记得之前的头像不长这样啊 \n'
+            '换了一个算法么链接0 条评论2016-07-09T17:58:15ZmintPokemonGO登陆不上去 要疯了~链接0 '
+            '条评论2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 条评论«123»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': "Tao's blog",
+ 'url': 'https://tao-blog.herokuapp.com/'}
+2017-04-28 18:41:16 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://tao-blog.herokuapp.com/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-04-28 18:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/?page=3> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:20 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/?page=3>
+{'content': "Tao's blog切换导航Tao’s blog主页登录你好, "
+            '朋友!全部2016-05-02T04:26:24Ztao第一版发布，以后陆续加入其他功能，大家帮我测试下～～链接1 '
+            '条评论«123»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': "Tao's blog",
+ 'url': 'https://tao-blog.herokuapp.com/?page=3'}
+2017-04-28 18:41:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/?page=2> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:24 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/?page=2>
+{'content': "Tao's blog切换导航Tao’s blog主页登录你好, "
+            '朋友!全部2016-06-14T10:43:22Ztao注意：注册邮件有时会由于大家的邮箱反垃圾设置而无法送达。在未收到注册确认邮件时可以换个邮箱试试。链接0 '
+            '条评论2016-05-26T06:40:50Ztao网站说明基于python的 '
+            'web应用开发，使用Flask作为基本框架，集成了Bootstrap、SQLAlchemy、Markdown等扩展实现的一个社交博客。\n'
+            '目前网站的整体功能已经实现，后续功能增加和网站界面样式调整工作还会继续进行。已经实现的功能有用户认证、角色分配、个人资料展示、博客文章发布以及评论等。使用了基于Flask的REST式API，在第三方客户端上实现可用功能。除此之外还包括用户进行一些操作时的邮件确认，代码的单元测试，使用Selenium进行端到端测试，记录影响性能的数据库查询和执行缓慢的函数。项目使用Heroku部署，Github地址。本站参照Flask '
+            'Web Development by Miguel '
+            'Grinberg书中的方法以及其在github上的开源代码完成的，网站托管在heroku云平台上。在此感谢作者Miguel '
+            'Grinberg和heroku云平台。链接0 条评论2016-05-03T12:47:33Zpjc66链接0 '
+            '条评论2016-05-02T04:52:39Zmint这个头像就是你说的那个自动生成的啊~链接2 '
+            '条评论2016-05-02T04:32:11Zpjc是谁送你来到我身边，是那璀璨滴星光星光，是那明媚滴蓝天，是那明媚滴蓝天，蓝天……啦莎莉啦莎莉啦链接0 '
+            '条评论«123»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': "Tao's blog",
+ 'url': 'https://tao-blog.herokuapp.com/?page=2'}
+2017-04-28 18:41:24 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'github.com': <GET https://github.com/singleyoungtao/myblog-flask>
+2017-04-28 18:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/?page=1> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:27 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/?page=1>
+{'content': "Tao's blog切换导航Tao’s blog主页登录你好, "
+            '朋友!全部2016-09-12T14:32:13Zmint加油呀~链接0 '
+            '条评论2016-09-02T01:55:21Ztaoiefjie链接0 '
+            '条评论2016-08-22T11:19:09Zmint隐约记得之前的头像不长这样啊 \n'
+            '换了一个算法么链接0 条评论2016-07-09T17:58:15ZmintPokemonGO登陆不上去 要疯了~链接0 '
+            '条评论2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 条评论«123»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': "Tao's blog",
+ 'url': 'https://tao-blog.herokuapp.com/?page=1'}
+2017-04-28 18:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/7> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:32 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/7>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 '
+            "条评论评论2016-06-28T02:30:01Zsunshinesmile福特翼虎2016-06-29T07:28:37Ztao(●'◡'●)2016-07-01T08:44:13Ztao会继续加油的( "
+            '• ̀ω•́ )✧过些日子就会添加新东西~«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/7'}
+2017-04-28 18:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/8> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:35 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/8>
+{'content': 'Post切换导航Tao’s blog主页登录2016-07-09T17:58:15ZmintPokemonGO登陆不上去 '
+            '要疯了~链接0 条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/8'}
+2017-04-28 18:41:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/9> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:39 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/9>
+{'content': 'Post切换导航Tao’s blog主页登录2016-08-22T11:19:09Zmint隐约记得之前的头像不长这样啊 \n'
+            '换了一个算法么链接0 条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/9'}
+2017-04-28 18:41:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/10> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:42 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/10>
+{'content': 'Post切换导航Tao’s blog主页登录2016-09-02T01:55:21Ztaoiefjie链接0 '
+            '条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/10'}
+2017-04-28 18:41:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/tao> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:45 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/tao>
+{'content': 'tao切换导航Tao’s blog主页登录tao注册于2016-05-02T04:15:12Z. '
+            '上次浏览2017-01-08T06:33:38Z.4 篇博客文章 3 '
+            '条评论关注你的:1你关注的:0由tao发布2016-09-02T01:55:21Ztaoiefjie链接0 '
+            '条评论2016-06-14T10:43:22Ztao注意：注册邮件有时会由于大家的邮箱反垃圾设置而无法送达。在未收到注册确认邮件时可以换个邮箱试试。链接0 '
+            '条评论2016-05-26T06:40:50Ztao网站说明基于python的 '
+            'web应用开发，使用Flask作为基本框架，集成了Bootstrap、SQLAlchemy、Markdown等扩展实现的一个社交博客。\n'
+            '目前网站的整体功能已经实现，后续功能增加和网站界面样式调整工作还会继续进行。已经实现的功能有用户认证、角色分配、个人资料展示、博客文章发布以及评论等。使用了基于Flask的REST式API，在第三方客户端上实现可用功能。除此之外还包括用户进行一些操作时的邮件确认，代码的单元测试，使用Selenium进行端到端测试，记录影响性能的数据库查询和执行缓慢的函数。项目使用Heroku部署，Github地址。本站参照Flask '
+            'Web Development by Miguel '
+            'Grinberg书中的方法以及其在github上的开源代码完成的，网站托管在heroku云平台上。在此感谢作者Miguel '
+            'Grinberg和heroku云平台。链接0 '
+            '条评论2016-05-02T04:26:24Ztao第一版发布，以后陆续加入其他功能，大家帮我测试下～～链接1 '
+            '条评论«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'tao',
+ 'url': 'https://tao-blog.herokuapp.com/user/tao'}
+2017-04-28 18:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/11> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:48 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/11>
+{'content': 'Post切换导航Tao’s blog主页登录2016-09-12T14:32:13Zmint加油呀~链接0 '
+            '条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/11'}
+2017-04-28 18:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/mint> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:52 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/mint>
+{'content': 'mint切换导航Tao’s blog主页登录mint注册于2016-05-02T04:41:47Z. '
+            '上次浏览2016-09-12T14:32:13Z.5 篇博客文章 0 '
+            '条评论关注你的:1你关注的:0由mint发布2016-09-12T14:32:13Zmint加油呀~链接0 '
+            '条评论2016-08-22T11:19:09Zmint隐约记得之前的头像不长这样啊 \n'
+            '换了一个算法么链接0 条评论2016-07-09T17:58:15ZmintPokemonGO登陆不上去 要疯了~链接0 '
+            '条评论2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 '
+            '条评论2016-05-02T04:52:39Zmint这个头像就是你说的那个自动生成的啊~链接2 条评论«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'mint',
+ 'url': 'https://tao-blog.herokuapp.com/user/mint'}
+2017-04-28 18:41:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://tao-blog.herokuapp.com/auth/login?next=%2Fall> from <GET https://tao-blog.herokuapp.com/all>
+2017-04-28 18:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/auth/login> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:41:59 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:41:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/auth/login>
+{'content': 'Login切换导航Tao’s '
+            'blog主页登录登录邮箱密码保持登录状态忘记密码？点击这里重置.新用户？点击这里注册.function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Login',
+ 'url': 'https://tao-blog.herokuapp.com/auth/login'}
+2017-04-28 18:42:02 [scrapy.extensions.logstats] INFO: Crawled 13 pages (at 13 pages/min), scraped 12 items (at 12 items/min)
+2017-04-28 18:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/1> (referer: https://tao-blog.herokuapp.com/?page=3)
+2017-04-28 18:42:03 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/1>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-05-02T04:26:24Ztao第一版发布，以后陆续加入其他功能，大家帮我测试下～～链接1 '
+            '条评论评论2016-05-03T12:33:31Zpjc66666666666666«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/1'}
+2017-04-28 18:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/3> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:06 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/3>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-05-02T04:52:39Zmint这个头像就是你说的那个自动生成的啊~链接2 '
+            '条评论评论2016-05-02T04:54:47Ztao嗯，根据你的邮件地址自动生成的，我之后加入上传头像的功能。2016-05-03T12:35:02Zpjc666666666666666666666666666666«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/3'}
+2017-04-28 18:42:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/4> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:10 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/4>
+{'content': 'Post切换导航Tao’s blog主页登录2016-05-03T12:47:33Zpjc66链接0 '
+            '条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/4'}
+2017-04-28 18:42:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/pjc> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:14 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/pjc>
+{'content': 'pjc切换导航Tao’s blog主页登录pjc注册于2016-05-02T04:28:50Z. '
+            '上次浏览2016-05-11T06:32:43Z.2 篇博客文章 2 '
+            '条评论关注你的:0你关注的:2由pjc发布2016-05-03T12:47:33Zpjc66链接0 '
+            '条评论2016-05-02T04:32:11Zpjc是谁送你来到我身边，是那璀璨滴星光星光，是那明媚滴蓝天，是那明媚滴蓝天，蓝天……啦莎莉啦莎莉啦链接0 '
+            '条评论«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'pjc',
+ 'url': 'https://tao-blog.herokuapp.com/user/pjc'}
+2017-04-28 18:42:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/5> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:18 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/5>
+{'content': 'Post切换导航Tao’s blog主页登录2016-05-26T06:40:50Ztao网站说明基于python的 '
+            'web应用开发，使用Flask作为基本框架，集成了Bootstrap、SQLAlchemy、Markdown等扩展实现的一个社交博客。\n'
+            '目前网站的整体功能已经实现，后续功能增加和网站界面样式调整工作还会继续进行。已经实现的功能有用户认证、角色分配、个人资料展示、博客文章发布以及评论等。使用了基于Flask的REST式API，在第三方客户端上实现可用功能。除此之外还包括用户进行一些操作时的邮件确认，代码的单元测试，使用Selenium进行端到端测试，记录影响性能的数据库查询和执行缓慢的函数。项目使用Heroku部署，Github地址。本站参照Flask '
+            'Web Development by Miguel '
+            'Grinberg书中的方法以及其在github上的开源代码完成的，网站托管在heroku云平台上。在此感谢作者Miguel '
+            'Grinberg和heroku云平台。链接0 条评论评论«»function flask_moment_render(elem) '
+            '{\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/5'}
+2017-04-28 18:42:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/6> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:21 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/6>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-06-14T10:43:22Ztao注意：注册邮件有时会由于大家的邮箱反垃圾设置而无法送达。在未收到注册确认邮件时可以换个邮箱试试。链接0 '
+            '条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/6'}
+2017-04-28 18:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/2> (referer: https://tao-blog.herokuapp.com/?page=2)
+2017-04-28 18:42:24 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/2>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-05-02T04:32:11Zpjc是谁送你来到我身边，是那璀璨滴星光星光，是那明媚滴蓝天，是那明媚滴蓝天，蓝天……啦莎莉啦莎莉啦链接0 '
+            '条评论评论«»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/2'}
+2017-04-28 18:42:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/7?page=1> (referer: https://tao-blog.herokuapp.com/post/7)
+2017-04-28 18:42:29 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/7?page=1>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 '
+            "条评论评论2016-06-28T02:30:01Zsunshinesmile福特翼虎2016-06-29T07:28:37Ztao(●'◡'●)2016-07-01T08:44:13Ztao会继续加油的( "
+            '• ̀ω•́ )✧过些日子就会添加新东西~«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/7?page=1'}
+2017-04-28 18:42:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/sunshinesmile> (referer: https://tao-blog.herokuapp.com/post/7)
+2017-04-28 18:42:31 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/sunshinesmile>
+{'content': 'sunshinesmile切换导航Tao’s '
+            'blog主页登录sunshinesmile注册于2016-06-28T02:29:13Z. '
+            '上次浏览2016-06-28T02:31:16Z.0 篇博客文章 1 '
+            '条评论关注你的:0你关注的:0由sunshinesmile发布«»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'sunshinesmile',
+ 'url': 'https://tao-blog.herokuapp.com/user/sunshinesmile'}
+2017-04-28 18:42:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/tao?page=1> (referer: https://tao-blog.herokuapp.com/user/tao)
+2017-04-28 18:42:34 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/tao?page=1>
+{'content': 'tao切换导航Tao’s blog主页登录tao注册于2016-05-02T04:15:12Z. '
+            '上次浏览2017-01-08T06:33:38Z.4 篇博客文章 3 '
+            '条评论关注你的:1你关注的:0由tao发布2016-09-02T01:55:21Ztaoiefjie链接0 '
+            '条评论2016-06-14T10:43:22Ztao注意：注册邮件有时会由于大家的邮箱反垃圾设置而无法送达。在未收到注册确认邮件时可以换个邮箱试试。链接0 '
+            '条评论2016-05-26T06:40:50Ztao网站说明基于python的 '
+            'web应用开发，使用Flask作为基本框架，集成了Bootstrap、SQLAlchemy、Markdown等扩展实现的一个社交博客。\n'
+            '目前网站的整体功能已经实现，后续功能增加和网站界面样式调整工作还会继续进行。已经实现的功能有用户认证、角色分配、个人资料展示、博客文章发布以及评论等。使用了基于Flask的REST式API，在第三方客户端上实现可用功能。除此之外还包括用户进行一些操作时的邮件确认，代码的单元测试，使用Selenium进行端到端测试，记录影响性能的数据库查询和执行缓慢的函数。项目使用Heroku部署，Github地址。本站参照Flask '
+            'Web Development by Miguel '
+            'Grinberg书中的方法以及其在github上的开源代码完成的，网站托管在heroku云平台上。在此感谢作者Miguel '
+            'Grinberg和heroku云平台。链接0 '
+            '条评论2016-05-02T04:26:24Ztao第一版发布，以后陆续加入其他功能，大家帮我测试下～～链接1 '
+            '条评论«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'tao',
+ 'url': 'https://tao-blog.herokuapp.com/user/tao?page=1'}
+2017-04-28 18:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/tao> (referer: https://tao-blog.herokuapp.com/user/tao)
+2017-04-28 18:42:38 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/tao>
+{'content': 'Followed by tao切换导航Tao’s blog主页登录Followed by '
+            'taoUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by tao',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/tao'}
+2017-04-28 18:42:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/tao> (referer: https://tao-blog.herokuapp.com/user/tao)
+2017-04-28 18:42:41 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/tao>
+{'content': 'Followers of tao切换导航Tao’s blog主页登录Followers of '
+            'taoUserSincepjc2016-05-03T12:50:02Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of tao',
+ 'url': 'https://tao-blog.herokuapp.com/followers/tao'}
+2017-04-28 18:42:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/mint> (referer: https://tao-blog.herokuapp.com/user/mint)
+2017-04-28 18:42:45 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/mint>
+{'content': 'Followers of mint切换导航Tao’s blog主页登录Followers of '
+            'mintUserSincepjc2016-05-03T12:39:25Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of mint',
+ 'url': 'https://tao-blog.herokuapp.com/followers/mint'}
+2017-04-28 18:42:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/mint?page=1> (referer: https://tao-blog.herokuapp.com/user/mint)
+2017-04-28 18:42:49 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/mint?page=1>
+{'content': 'mint切换导航Tao’s blog主页登录mint注册于2016-05-02T04:41:47Z. '
+            '上次浏览2016-09-12T14:32:13Z.5 篇博客文章 0 '
+            '条评论关注你的:1你关注的:0由mint发布2016-09-12T14:32:13Zmint加油呀~链接0 '
+            '条评论2016-08-22T11:19:09Zmint隐约记得之前的头像不长这样啊 \n'
+            '换了一个算法么链接0 条评论2016-07-09T17:58:15ZmintPokemonGO登陆不上去 要疯了~链接0 '
+            '条评论2016-06-24T03:37:14Zmint给一个小朋友（节选）一开头有点遭遇不是什么坏事，总比一帆风顺最后突然被一棍子放倒头破血流要强。找到几个朋友，找到一个酒保，找到一间书店，找到一所盗版碟店，找到一间厕所和一张床，那么一座城也就会亲切起来。没有人生来就非常强悍，强悍只是因为早先曾经历过绝望的深渊和黑暗的岁月。哪怕没有阳光，也有豆芽菜能长出来，我们总比豆芽菜强吧？至少我们一开始就是蝌蚪了。另外 '
+            '自动生成的title感觉很不错的样子 继续加油啦~链接3 '
+            '条评论2016-05-02T04:52:39Zmint这个头像就是你说的那个自动生成的啊~链接2 条评论«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'mint',
+ 'url': 'https://tao-blog.herokuapp.com/user/mint?page=1'}
+2017-04-28 18:42:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/auth/login?next=%2Fall> (referer: https://tao-blog.herokuapp.com/)
+2017-04-28 18:42:52 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/auth/login?next=%2Fall>
+{'content': 'Login切换导航Tao’s '
+            'blog主页登录登录邮箱密码保持登录状态忘记密码？点击这里重置.新用户？点击这里注册.function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Login',
+ 'url': 'https://tao-blog.herokuapp.com/auth/login?next=%2Fall'}
+2017-04-28 18:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/mint> (referer: https://tao-blog.herokuapp.com/user/mint)
+2017-04-28 18:42:56 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:42:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/mint>
+{'content': 'Followed by mint切换导航Tao’s blog主页登录Followed by '
+            'mintUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by mint',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/mint'}
+2017-04-28 18:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/auth/register> (referer: https://tao-blog.herokuapp.com/auth/login)
+2017-04-28 18:43:00 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/auth/register>
+{'content': 'Register切换导航Tao’s blog主页登录注册邮箱用户名密码确认密码function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Register',
+ 'url': 'https://tao-blog.herokuapp.com/auth/register'}
+2017-04-28 18:43:02 [scrapy.extensions.logstats] INFO: Crawled 30 pages (at 17 pages/min), scraped 29 items (at 17 items/min)
+2017-04-28 18:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/1?page=1> (referer: https://tao-blog.herokuapp.com/post/1)
+2017-04-28 18:43:03 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/1?page=1>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-05-02T04:26:24Ztao第一版发布，以后陆续加入其他功能，大家帮我测试下～～链接1 '
+            '条评论评论2016-05-03T12:33:31Zpjc66666666666666«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/1?page=1'}
+2017-04-28 18:43:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/post/3?page=1> (referer: https://tao-blog.herokuapp.com/post/3)
+2017-04-28 18:43:07 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/post/3?page=1>
+{'content': 'Post切换导航Tao’s '
+            'blog主页登录2016-05-02T04:52:39Zmint这个头像就是你说的那个自动生成的啊~链接2 '
+            '条评论评论2016-05-02T04:54:47Ztao嗯，根据你的邮件地址自动生成的，我之后加入上传头像的功能。2016-05-03T12:35:02Zpjc666666666666666666666666666666«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Post',
+ 'url': 'https://tao-blog.herokuapp.com/post/3?page=1'}
+2017-04-28 18:43:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/auth/reset> (referer: https://tao-blog.herokuapp.com/auth/login)
+2017-04-28 18:43:09 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/auth/reset>
+{'content': 'Password Reset切换导航Tao’s blog主页登录重置你的密码邮箱function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Password Reset',
+ 'url': 'https://tao-blog.herokuapp.com/auth/reset'}
+2017-04-28 18:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/user/pjc?page=1> (referer: https://tao-blog.herokuapp.com/user/pjc)
+2017-04-28 18:43:13 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/user/pjc?page=1>
+{'content': 'pjc切换导航Tao’s blog主页登录pjc注册于2016-05-02T04:28:50Z. '
+            '上次浏览2016-05-11T06:32:43Z.2 篇博客文章 2 '
+            '条评论关注你的:0你关注的:2由pjc发布2016-05-03T12:47:33Zpjc66链接0 '
+            '条评论2016-05-02T04:32:11Zpjc是谁送你来到我身边，是那璀璨滴星光星光，是那明媚滴蓝天，是那明媚滴蓝天，蓝天……啦莎莉啦莎莉啦链接0 '
+            '条评论«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'pjc',
+ 'url': 'https://tao-blog.herokuapp.com/user/pjc?page=1'}
+2017-04-28 18:43:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/pjc> (referer: https://tao-blog.herokuapp.com/user/pjc)
+2017-04-28 18:43:17 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/pjc>
+{'content': 'Followed by pjc切换导航Tao’s blog主页登录Followed by '
+            'pjcUserSincemint2016-05-03T12:39:25Ztao2016-05-03T12:50:02Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by pjc',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/pjc'}
+2017-04-28 18:43:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/pjc> (referer: https://tao-blog.herokuapp.com/user/pjc)
+2017-04-28 18:43:21 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/pjc>
+{'content': 'Followers of pjc切换导航Tao’s blog主页登录Followers of '
+            'pjcUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of pjc',
+ 'url': 'https://tao-blog.herokuapp.com/followers/pjc'}
+2017-04-28 18:43:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/sunshinesmile> (referer: https://tao-blog.herokuapp.com/user/sunshinesmile)
+2017-04-28 18:43:25 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/sunshinesmile>
+{'content': 'Followed by sunshinesmile切换导航Tao’s blog主页登录Followed by '
+            'sunshinesmileUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by sunshinesmile',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/sunshinesmile'}
+2017-04-28 18:43:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/sunshinesmile> (referer: https://tao-blog.herokuapp.com/user/sunshinesmile)
+2017-04-28 18:43:28 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/sunshinesmile>
+{'content': 'Followers of sunshinesmile切换导航Tao’s blog主页登录Followers of '
+            'sunshinesmileUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of sunshinesmile',
+ 'url': 'https://tao-blog.herokuapp.com/followers/sunshinesmile'}
+2017-04-28 18:43:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/tao?page=1> (referer: https://tao-blog.herokuapp.com/followed-by/tao)
+2017-04-28 18:43:32 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/tao?page=1>
+{'content': 'Followed by tao切换导航Tao’s blog主页登录Followed by '
+            'taoUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by tao',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/tao?page=1'}
+2017-04-28 18:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/tao?page=1> (referer: https://tao-blog.herokuapp.com/followers/tao)
+2017-04-28 18:43:36 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/tao?page=1>
+{'content': 'Followers of tao切换导航Tao’s blog主页登录Followers of '
+            'taoUserSincepjc2016-05-03T12:50:02Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of tao',
+ 'url': 'https://tao-blog.herokuapp.com/followers/tao?page=1'}
+2017-04-28 18:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/mint?page=1> (referer: https://tao-blog.herokuapp.com/followers/mint)
+2017-04-28 18:43:39 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/mint?page=1>
+{'content': 'Followers of mint切换导航Tao’s blog主页登录Followers of '
+            'mintUserSincepjc2016-05-03T12:39:25Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of mint',
+ 'url': 'https://tao-blog.herokuapp.com/followers/mint?page=1'}
+2017-04-28 18:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/mint?page=1> (referer: https://tao-blog.herokuapp.com/followed-by/mint)
+2017-04-28 18:43:42 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/mint?page=1>
+{'content': 'Followed by mint切换导航Tao’s blog主页登录Followed by '
+            'mintUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by mint',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/mint?page=1'}
+2017-04-28 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/pjc?page=1> (referer: https://tao-blog.herokuapp.com/followed-by/pjc)
+2017-04-28 18:43:46 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/pjc?page=1>
+{'content': 'Followed by pjc切换导航Tao’s blog主页登录Followed by '
+            'pjcUserSincemint2016-05-03T12:39:25Ztao2016-05-03T12:50:02Z«1»function '
+            'flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by pjc',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/pjc?page=1'}
+2017-04-28 18:43:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/pjc?page=1> (referer: https://tao-blog.herokuapp.com/followers/pjc)
+2017-04-28 18:43:50 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/pjc?page=1>
+{'content': 'Followers of pjc切换导航Tao’s blog主页登录Followers of '
+            'pjcUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of pjc',
+ 'url': 'https://tao-blog.herokuapp.com/followers/pjc?page=1'}
+2017-04-28 18:43:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followed-by/sunshinesmile?page=1> (referer: https://tao-blog.herokuapp.com/followed-by/sunshinesmile)
+2017-04-28 18:43:54 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followed-by/sunshinesmile?page=1>
+{'content': 'Followed by sunshinesmile切换导航Tao’s blog主页登录Followed by '
+            'sunshinesmileUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followed by sunshinesmile',
+ 'url': 'https://tao-blog.herokuapp.com/followed-by/sunshinesmile?page=1'}
+2017-04-28 18:43:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://tao-blog.herokuapp.com/followers/sunshinesmile?page=1> (referer: https://tao-blog.herokuapp.com/followers/sunshinesmile)
+2017-04-28 18:43:59 [root] DEBUG: data has add to MongoDB database
+2017-04-28 18:43:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://tao-blog.herokuapp.com/followers/sunshinesmile?page=1>
+{'content': 'Followers of sunshinesmile切换导航Tao’s blog主页登录Followers of '
+            'sunshinesmileUserSince«1»function flask_moment_render(elem) {\n'
+            '    $(elem).text(eval(\'moment("\' + $(elem).data(\'timestamp\') '
+            '+ \'").\' + $(elem).data(\'format\') + \';\'));\n'
+            "    $(elem).removeClass('flask-moment');\n"
+            '}\n'
+            'function flask_moment_render_all() {\n'
+            "    $('.flask-moment').each(function() {\n"
+            '        flask_moment_render(this);\n'
+            "        if ($(this).data('refresh')) {\n"
+            '            (function(elem, interval) { setInterval(function() { '
+            'flask_moment_render(elem) }, interval); })(this, '
+            "$(this).data('refresh'));\n"
+            '        }\n'
+            '    })\n'
+            '}\n'
+            '$(document).ready(function() {\n'
+            '    flask_moment_render_all();\n'
+            '});',
+ 'title': 'Followers of sunshinesmile',
+ 'url': 'https://tao-blog.herokuapp.com/followers/sunshinesmile?page=1'}
+2017-04-28 18:43:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-04-28 18:43:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13093,
+ 'downloader/request_count': 48,
+ 'downloader/request_method_count/GET': 48,
+ 'downloader/response_bytes': 243196,
+ 'downloader/response_count': 48,
+ 'downloader/response_status_count/200': 46,
+ 'downloader/response_status_count/302': 2,
+ 'dupefilter/filtered': 227,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 4, 28, 10, 43, 59, 387553),
+ 'item_scraped_count': 45,
+ 'log_count/DEBUG': 141,
+ 'log_count/INFO': 9,
+ 'offsite/domains': 1,
+ 'offsite/filtered': 4,
+ 'request_depth_max': 5,
+ 'response_received_count': 46,
+ 'scheduler/dequeued': 48,
+ 'scheduler/dequeued/memory': 48,
+ 'scheduler/enqueued': 48,
+ 'scheduler/enqueued/memory': 48,
+ 'start_time': datetime.datetime(2017, 4, 28, 10, 41, 2, 748511)}
+2017-04-28 18:43:59 [scrapy.core.engine] INFO: Spider closed (finished)
